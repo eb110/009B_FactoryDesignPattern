@@ -1,6 +1,7 @@
 ﻿using System;
 using Factory_B.store;
 using Factory_B.pizza;
+using Factory_B.pizza.pizza.type;
 
 namespace Factory_B
 {
@@ -9,7 +10,7 @@ namespace Factory_B
         static void Main(string[] args)
         {
             PizzaStore nyPizzaStore = new NYPizzaStore();
-            Pizza pepperoniPizza = nyPizzaStore.orderPizza("cheese");
+            Pizza pepperoniPizza = nyPizzaStore.orderPizza(E_PizzaType.PEPPERONI_PIZZA);
             Console.WriteLine("Hello World!");
         }
     }

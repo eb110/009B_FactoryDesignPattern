@@ -1,11 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Factory_B.pizza.pizza.type;
 
 namespace Factory_B.pizza.NY
 {
-    class NYStyleCheesePizza : Pizza
+    public class NYStyleCheesePizza : Pizza
     {
+        internal NYStyleCheesePizza()
+        {
+            this.pizzaType = E_PizzaType.CHEESE_PIZZA;
+        }
         public override void bake()
         {
             Console.WriteLine("Baking 'NY' cheese");
