@@ -7,6 +7,8 @@ namespace Factory_B.pizza.pizza.type
     public enum E_PizzaType
     {
         CHEESE_PIZZA,
-        PEPPERONI_PIZZA
+        PEPPERONI_PIZZA,
+        VEGGIE_PIZZA,
+        CLAM_PIZZA
     }
 }
