@@ -10,7 +10,9 @@ namespace Factory_B
         static void Main(string[] args)
         {
             PizzaStore nyPizzaStore = new NYPizzaStore();
-            Pizza pepperoniPizza = nyPizzaStore.orderPizza(E_PizzaType.PEPPERONI_PIZZA);
+            Pizza pepperoniPizzaNY = nyPizzaStore.orderPizza(E_PizzaType.PEPPERONI_PIZZA);
+            PizzaStore chicagoPizzaStore = new ChicagoPizzaStore();
+            Pizza pepperoniPizzaChicago = chicagoPizzaStore.orderPizza(E_PizzaType.PEPPERONI_PIZZA);
             Console.WriteLine("Hello World!");
         }
     }
